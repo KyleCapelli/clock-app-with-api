@@ -1,0 +1,48 @@
+.App {
+  position: relative;
+  overflow-y: hidden;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/public/mobile/bg-image-daytime.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.App.night-mode {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("/public/mobile/bg-image-nighttime.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+  .App {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/public/tablet/bg-image-daytime.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .App.night-mode {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/public/tablet/bg-image-nighttime.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .App {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/public/desktop/bg-image-daytime.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .App.night-mode {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/public/desktop/bg-image-nighttime.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,232 @@
+.main__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.main__quote-container {
+  display: flex;
+  align-items: flex-start;
+  max-width: 573px;
+}
+
+.quote-hidden {
+  transform: translateY(-150%);
+  transition: transform 1s ease;
+  -webkit-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+}
+
+.quote-active {
+  transform: translateY(0);
+  transition: transform 1s ease;
+  -webkit-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+}
+
+.main__quote-container p {
+  font-size: 0.8rem;
+  line-height: 1.8;
+  color: #fff;
+}
+
+.main__quote-container strong {
+  margin-top: 0.8rem;
+  font-weight: 600;
+  display: block;
+}
+
+.main__quote-container img {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+/* CLOCK SECTION */
+
+.main__clock-container {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.clock-up {
+  transform: translateY(-35vh);
+  transition: transform 1s ease;
+  -webkit-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+}
+
+.clock-down {
+  transform: translateY(0vh);
+  transition: transform 1s ease;
+  -webkit-transition: transform 1s ease;
+  -ms-transition: transform 1s ease;
+  -moz-transition: transform 1s ease;
+  -o-transition: transform 1s ease;
+}
+
+.main__day-night {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.main__day-night p {
+  margin-left: 1rem;
+  letter-spacing: 1.8px;
+  font-weight: 300;
+}
+
+.main__clock {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.main__clock h1 {
+  font-size: 6rem;
+}
+
+.main__clock p {
+  font-weight: 300;
+  padding-bottom: 1.15rem;
+  margin-left: 1rem;
+}
+
+.main__clock-country {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.main__button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0.3rem 0.3rem 1rem;
+  width: 115px;
+  background: #fff;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.main__button-container:hover .main__arrow-container {
+  transition: background-color 0.2s ease;
+  background-color: #999999;
+}
+
+.main__button-container p {
+  color: black;
+  opacity: 50%;
+  letter-spacing: 4.5px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.main__arrow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #303030;
+  transition: background-color 0.2s ease;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.main__arrow-up {
+  width: 12px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.main__arrow-down {
+  width: 12px;
+}
+
+/* TABLET STYLES */
+@media only screen and (min-width: 768px) {
+  .main__clock h1 {
+    font-size: 11rem;
+  }
+
+  .main__clock p {
+    font-size: 2rem;
+    padding-bottom: 2.15rem;
+  }
+
+  .main__day-night {
+    margin: 0;
+  }
+
+  .main__clock {
+    margin: 0;
+  }
+
+  .main__clock-country {
+    margin-bottom: 4rem;
+  }
+
+  .main__quote-container p {
+    font-size: 1rem;
+  }
+
+  .main__quote-container img {
+    margin-top: 0.2rem;
+  }
+
+  .clock-up {
+    transform: translateY(-50vh);
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+  }
+
+  .clock-down {
+    transform: translateY(0vh);
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+  }
+}
+
+/* DESKTOP STYLES */
+
+@media only screen and (min-width: 1200px) {
+  .main__clock h1 {
+    font-size: 12.5rem;
+  }
+
+  .main__clock-container {
+    position: relative;
+    margin-bottom: 3rem;
+  }
+
+  .main__button-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .main__clock-country {
+    margin-bottom: 0;
+  }
+}
