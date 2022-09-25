@@ -64,7 +64,7 @@ function App() {
 
   const getInfoData = () => {
     axios
-      .get(`http://worldtimeapi.org/api/ip/${ip}`)
+      .get(`https://worldtimeapi.org/api/ip/${ip}`)
       .then((res) => {
         setTimeZone(res.data.timezone);
         setDayYear(res.data.day_of_year);
